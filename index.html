@@ -1,143 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UU Kepolisian SAMP</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
     <h1 class="judul">UUD ARIVENA</h1>
-    <h2 class="ringan">👮PRESISI👮</h2>
+    <h2 class="ringan">👮 PRESISI 👮</h2>
 
-    <!-- FORM LAPORAN PENANGKAPAN -->
-    <h2 class="sedang">Form Laporan Penangkapan</h2>
+    <div class="form-group">
+        <label for="namaPelaku">Nama Pelaku:</label>
+        <input type="text" id="namaPelaku">
+    </div>
     
-    <table class="sedangTable">
-        <tr>
-            <td><label for="namaPelaku">Nama Pelaku:</label></td>
-            <td><input type="text" id="namaPelaku"></td>
-        </tr>
-        <tr>
-            <td><label for="nikPelaku">NIK:</label></td>
-            <td><input type="text" id="nikPelaku"></td>
-        </tr>
-        <tr>
-            <td><label for="lokasi">Lokasi Penangkapan:</label></td>
-            <td><input type="text" id="lokasi"></td>
-        </tr>
-        <tr>
-            <td><label for="namaPetugas">Nama Petugas:</label></td>
-            <td><input type="text" id="namaPetugas"></td>
-        </tr>
-        <tr>
-            <td><label for="pangkat">Pangkat:</label></td>
-            <td><input type="text" id="pangkat"></td>
-        </tr>
-        <tr>
-            <td><label for="devisi">Devisi:</label></td>
-            <td><input type="text" id="devisi"></td>
-        </tr>
-        <tr>
-            <td><label for="narasi">Narasi:</label></td>
-            <td><textarea id="narasi" rows="4"></textarea></td>
-        </tr>
-    </table>
+    <div class="form-group">
+        <label for="nik">NIK:</label>
+        <input type="text" id="nik">
+    </div>
 
-    <!-- HASIL OTOMATIS MUNCUL -->
-    <h2 class="sedang">Hasil Laporan</h2>
-    <table class="sedangTable">
-        <tr>
-            <td><strong>Nama Pelaku:</strong></td>
-            <td><output id="outputNamaPelaku"></output></td>
-        </tr>
-        <tr>
-            <td><strong>NIK:</strong></td>
-            <td><output id="outputNIKPelaku"></output></td>
-        </tr>
-        <tr>
-            <td><strong>Lokasi Penangkapan:</strong></td>
-            <td><output id="outputLokasi"></output></td>
-        </tr>
-        <tr>
-            <td><strong>Nama Petugas:</strong></td>
-            <td><output id="outputNamaPetugas"></output></td>
-        </tr>
-        <tr>
-            <td><strong>Pangkat:</strong></td>
-            <td><output id="outputPangkat"></output></td>
-        </tr>
-        <tr>
-            <td><strong>Devisi:</strong></td>
-            <td><output id="outputDevisi"></output></td>
-        </tr>
-        <tr>
-            <td><strong>Narasi:</strong></td>
-            <td><output id="outputNarasi"></output></td>
-        </tr>
-    </table>
+    <div class="form-group">
+        <label for="lokasi">Lokasi Penangkapan:</label>
+        <input type="text" id="lokasi">
+    </div>
 
-    <!-- DAFTAR PASAL -->
+    <div class="form-group">
+        <label for="namaPetugas">Nama Petugas:</label>
+        <input type="text" id="namaPetugas">
+    </div>
+
+    <div class="form-group">
+        <label for="pangkat">Pangkat:</label>
+        <input type="text" id="pangkat">
+    </div>
+
+    <div class="form-group">
+        <label for="divisi">Divisi:</label>
+        <input type="text" id="divisi">
+    </div>
+
+    <div class="form-group">
+        <label for="narasi">Narasi:</label>
+        <textarea id="narasi"></textarea>
+    </div>
+
     <h2 class="sedang">PERSENJATAAN</h2>
     <table class="sedangTable">
         <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PERSENJATAAN</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
+            <th>UU</th>
+            <th>CEKLIS</th>
+            <th>PERSENJATAAN</th>
+            <th>DENDA</th>
+            <th>PENJARA</th>
         </tr>
         <tr>
             <td>2.A</td>
-            <td><input type="checkbox"></td>
+            <td><input type="checkbox" class="CEKLIS"></td>
             <td>KEPEMILIKAN SENJATA TUMPUL/SAJAM</td>
             <td>250</td>
             <td>15</td>
         </tr>
         <tr>
             <td>2.B</td>
-            <td><input type="checkbox"></td>
+            <td><input type="checkbox" class="CEKLIS"></td>
             <td>KEPEMILIKAN SENJATA API LARAS PENDEK</td>
             <td>300</td>
             <td>30</td>
         </tr>
     </table>
 
-    <h2 class="sedang">TINDAK KRIMINAL</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>TINDAK KRIMINAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-        <tr>
-            <td>3.A</td>
-            <td><input type="checkbox"></td>
-            <td>PERCOBAAN PEMBUNUHAN</td>
-            <td>400</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>3.B</td>
-            <td><input type="checkbox"></td>
-            <td>PEMBUNUHAN</td>
-            <td>800</td>
-            <td>60</td>
-        </tr>
-    </table>
-
-    <footer>
-        <div class="credits">
-            <a href="https://www.instagram.com/mezz1606?igsh=MTk2YXkydTNlbzQ2ZQ==">Follow IG Gwe Dapat Bansos</a>
-            <p>Dev By : 👮Teddy Abimana👮</p>
-        </div>
-    </footer>
+    <button onclick="submitForm()">Submit</button>
+    
+    <div id="hasilLaporan"></div>
 
 </body>
-
 </html>
