@@ -1,97 +1,141 @@
-/* Dark mode background */
+/* ======= General Style ======= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e2e;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
     color: #ffffff;
     margin: 0;
     padding: 20px;
-    text-align: center;
-}
-
-/* Judul utama */
-.judul {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #ffcc00;
-}
-
-/* Container utama */
-.form-container {
-    background-color: #2c2c3a;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Style untuk setiap form input */
-.form-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+/* ======= Header ======= */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* ======= Form Container ======= */
+.form-container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* ======= Input Form ======= */
+.form-group {
     margin-bottom: 15px;
 }
 
 label {
     font-weight: bold;
+    display: block;
     margin-bottom: 5px;
+    color: #00d4ff;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ffcc00;
+    border: 2px solid #007bff;
     border-radius: 5px;
-    background-color: #3b3b4f;
+    background: #2a2a2a;
     color: #ffffff;
-    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Table styling */
-.sedangTable {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #2c2c3a;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+input:focus, textarea:focus {
+    border-color: #00d4ff;
+    background: #333;
 }
 
-/* Table header */
-.sedangTable th {
-    background-color: #ffcc00;
-    color: black;
-    padding: 12px;
-}
-
-/* Table rows */
-.sedangTable td {
-    padding: 10px;
-    border: 1px solid #ffffff;
-    text-align: left;
-}
-
-/* Alternating row colors */
-.sedangTable tr:nth-child(even) {
-    background-color: #3b3b4f;
-}
-
-/* Styling untuk tombol submit */
+/* ======= Submit Button ======= */
 button {
-    background-color: #ffcc00;
-    color: black;
-    border: none;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: white;
     font-size: 16px;
+    font-weight: bold;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
 }
 
 button:hover {
-    background-color: #e6b800;
+    background: linear-gradient(90deg, #0056b3, #008cff);
+}
+
+/* ======= Tabel Pasal ======= */
+.sedangTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.sedangTable th, .sedangTable td {
+    border: 2px solid #00d4ff;
+    padding: 12px;
+    text-align: left;
+    background: #2a2a2a;
+}
+
+.sedangTable th {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: white;
+    text-align: center;
+}
+
+/* ======= Kotak Hasil Laporan ======= */
+.history-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #00d4ff;
+    border-radius: 8px;
+    background: #1e1e1e;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* ======= Judul Hasil ======= */
+.history-container h3 {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ======= Isi Hasil ======= */
+.history-container p {
+    padding: 8px;
+    margin: 8px 0;
+    border-left: 4px solid #00d4ff;
+    background: #2a2a2a;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+/* ======= Kotak Pasal yang lebih luas ======= */
+.pasal-container {
+    background: #2a2a2a;
+    border-left: 4px solid #00d4ff;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
 }
