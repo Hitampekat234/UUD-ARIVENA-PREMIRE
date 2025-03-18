@@ -10,31 +10,37 @@ body {
     align-items: center;
 }
 
+/* ======= Container Utama ======= */
+.form-container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #00d4ff;
+}
+
 /* ======= Header ======= */
 h1 {
     text-align: center;
-    color: #ffffff;
+    color: white;
     background: linear-gradient(90deg, #007bff, #00d4ff);
     padding: 15px;
     border-radius: 10px;
     width: 100%;
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    border: 2px solid #00d4ff;
 }
 
-/* ======= Form Container ======= */
-.form-container {
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
-    width: 100%;
-    max-width: 800px;
-}
-
-/* ======= Input Form ======= */
+/* ======= Form Input ======= */
 .form-group {
-    margin-bottom: 15px;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #00d4ff;
 }
 
 label {
@@ -49,15 +55,13 @@ input, textarea {
     padding: 10px;
     border: 2px solid #007bff;
     border-radius: 5px;
-    background: #2a2a2a;
-    color: #ffffff;
+    background: #333;
+    color: white;
     outline: none;
-    transition: 0.3s;
 }
 
 input:focus, textarea:focus {
     border-color: #00d4ff;
-    background: #333;
 }
 
 /* ======= Submit Button ======= */
@@ -72,7 +76,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    margin-top: 10px;
 }
 
 button:hover {
@@ -84,6 +88,9 @@ button:hover {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .sedangTable th, .sedangTable td {
@@ -112,16 +119,17 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
 }
 
-/* ======= Judul Hasil ======= */
+/* ======= Judul Hasil Laporan ======= */
 .history-container h3 {
     background: linear-gradient(90deg, #007bff, #00d4ff);
     color: white;
     padding: 12px;
     border-radius: 5px;
     text-align: center;
+    border: 2px solid #00d4ff;
 }
 
-/* ======= Isi Hasil ======= */
+/* ======= Isi Hasil Laporan ======= */
 .history-container p {
     padding: 8px;
     margin: 8px 0;
@@ -129,13 +137,5 @@ button:hover {
     background: #2a2a2a;
     padding-left: 15px;
     font-size: 16px;
-}
-
-/* ======= Kotak Pasal yang lebih luas ======= */
-.pasal-container {
-    background: #2a2a2a;
-    border-left: 4px solid #00d4ff;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
+    border-radius: 5px;
 }
