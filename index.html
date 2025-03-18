@@ -4,54 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UU KEPOLISAN SAMP</title>
+    <title>Form Laporan Penangkapan</title>
     <link rel="stylesheet" href="style.css">
     <script>
+        function updateDateTime() {
+            let now = new Date();
+            let tanggal = now.toLocaleDateString('id-ID');
+            let waktu = now.toLocaleTimeString('id-ID');
+            document.getElementById("waktuTanggal").value = `${tanggal} ${waktu}`;
+        }
+
         function submitForm() {
-            let nama = document.getElementById("nama").value;
+            let namaPelaku = document.getElementById("namaPelaku").value;
+            let nik = document.getElementById("nik").value;
+            let waktuTanggal = document.getElementById("waktuTanggal").value;
+            let lokasi = document.getElementById("lokasi").value;
+            let namaPetugas = document.getElementById("namaPetugas").value;
+            let pangkat = document.getElementById("pangkat").value;
             let devisi = document.getElementById("devisi").value;
-            let ceklis = document.querySelectorAll(".CEKLIS:checked");
+            let narasi = document.getElementById("narasi").value;
             let pasalTerpilih = [];
 
+            let ceklis = document.querySelectorAll(".CEKLIS:checked");
             ceklis.forEach((item) => {
                 let row = item.closest("tr");
                 let pasal = row.cells[0].innerText;
-                let deskripsi = row.cells[2].innerText;
-                pasalTerpilih.push(`${pasal} - ${deskripsi}`);
+                pasalTerpilih.push(pasal);
             });
 
             let hasil = `
-                <h3>Hasil Input:</h3>
-                <p><strong>Nama Anggota:</strong> ${nama}</p>
+                <h3>Hasil Laporan:</h3>
+                <p><strong>Nama Pelaku:</strong> ${namaPelaku}</p>
+                <p><strong>NIK:</strong> ${nik}</p>
+                <p><strong>Waktu & Tanggal:</strong> ${waktuTanggal}</p>
+                <p><strong>Pasal yang Dilanggar:</strong> ${pasalTerpilih.join(", ")}</p>
+                <p><strong>Lokasi Penangkapan:</strong> ${lokasi}</p>
+                <p><strong>Nama Petugas:</strong> ${namaPetugas}</p>
+                <p><strong>Pangkat:</strong> ${pangkat}</p>
                 <p><strong>Devisi:</strong> ${devisi}</p>
-                <p><strong>Pasal yang Dicentang:</strong></p>
-                <ul>${pasalTerpilih.map(pasal => `<li>${pasal}</li>`).join("")}</ul>
+                <p><strong>Narasi:</strong> ${narasi}</p>
             `;
 
             document.getElementById("history").innerHTML = hasil;
+
+            // Reset input dan checkbox setelah submit
+            document.getElementById("namaPelaku").value = "";
+            document.getElementById("nik").value = "";
+            document.getElementById("lokasi").value = "";
+            document.getElementById("namaPetugas").value = "";
+            document.getElementById("pangkat").value = "";
+            document.getElementById("devisi").value = "";
+            document.getElementById("narasi").value = "";
+            ceklis.forEach((item) => item.checked = false);
         }
+
+        // Update waktu secara otomatis saat halaman dimuat
+        window.onload = updateDateTime;
     </script>
 </head>
 
 <body>
-    <h1 class="judul">UUD ARIVENA</h1>
-    
-    <h2 class="ringan">👮PRESISI👮</h2>
+    <h1 class="judul">Laporan Penangkapan</h1>
 
     <div class="form-group">
-        <label for="nama">Nama Anggota:</label>
-        <input type="text" id="nama">
+        <label for="namaPelaku">Nama Pelaku:</label>
+        <input type="text" id="namaPelaku">
     </div>
-    
+
     <div class="form-group">
-        <label for="devisi">Devisi:</label>
-        <input type="text" id="devisi">
+        <label for="nik">NIK:</label>
+        <input type="text" id="nik">
     </div>
 
-    <button onclick="submitForm()">Submit</button>
-    <div id="history"></div>
+    <div class="form-group">
+        <label for="waktuTanggal">Waktu & Tanggal:</label>
+        <input type="text" id="waktuTanggal" readonly>
+    </div>
 
-    <h2 class="sedang">PERSENJATAAN</h2>
+    <div class="form-group">
+        <label for="lokasi">Lokasi Penangkapan:</label>
+        <input type="text" id="lokasi">
+    </div>
+
+    <h2 class="sedang">Pasal yang Dilanggar</h2>
     <table class="sedangTable" border="1">
         <tr class="sedang2">
             <td>UU</td>
@@ -77,6 +112,30 @@
             <td>45</td>
         </tr>
     </table>
+
+    <div class="form-group">
+        <label for="namaPetugas">Nama Petugas:</label>
+        <input type="text" id="namaPetugas">
+    </div>
+
+    <div class="form-group">
+        <label for="pangkat">Pangkat:</label>
+        <input type="text" id="pangkat">
+    </div>
+
+    <div class="form-group">
+        <label for="devisi">Devisi:</label>
+        <input type="text" id="devisi">
+    </div>
+
+    <div class="form-group">
+        <label for="narasi">Narasi:</label>
+        <textarea id="narasi"></textarea>
+    </div>
+
+    <button onclick="submitForm()">Submit</button>
+    <div id="history"></div>
+
 </body>
 
 </html>
