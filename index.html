@@ -1,520 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UU KEPOLISAN ARIVENA AMERIKA</title>
+    <title>UU Kepolisian SAMP</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <h1 class="judul">UUD ARIVENA AMERIKA</h1>
 
-    <h2 class="ringan">👮 PRESISI 👮</h2>
-</table>
+    <h1 class="judul">UUD ARIVENA</h1>
+    <h2 class="ringan">👮PRESISI👮</h2>
 
-        <div class="form-group">
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama">
-    </div>
+    <!-- FORM LAPORAN PENANGKAPAN -->
+    <h2 class="sedang">Form Laporan Penangkapan</h2>
+    
+    <table class="sedangTable">
+        <tr>
+            <td><label for="namaPelaku">Nama Pelaku:</label></td>
+            <td><input type="text" id="namaPelaku"></td>
+        </tr>
+        <tr>
+            <td><label for="nikPelaku">NIK:</label></td>
+            <td><input type="text" id="nikPelaku"></td>
+        </tr>
+        <tr>
+            <td><label for="lokasi">Lokasi Penangkapan:</label></td>
+            <td><input type="text" id="lokasi"></td>
+        </tr>
+        <tr>
+            <td><label for="namaPetugas">Nama Petugas:</label></td>
+            <td><input type="text" id="namaPetugas"></td>
+        </tr>
+        <tr>
+            <td><label for="pangkat">Pangkat:</label></td>
+            <td><input type="text" id="pangkat"></td>
+        </tr>
+        <tr>
+            <td><label for="devisi">Devisi:</label></td>
+            <td><input type="text" id="devisi"></td>
+        </tr>
+        <tr>
+            <td><label for="narasi">Narasi:</label></td>
+            <td><textarea id="narasi" rows="4"></textarea></td>
+        </tr>
+    </table>
 
-    <button onclick="submitForm()">Submit</button>
+    <!-- HASIL OTOMATIS MUNCUL -->
+    <h2 class="sedang">Hasil Laporan</h2>
+    <table class="sedangTable">
+        <tr>
+            <td><strong>Nama Pelaku:</strong></td>
+            <td><output id="outputNamaPelaku"></output></td>
+        </tr>
+        <tr>
+            <td><strong>NIK:</strong></td>
+            <td><output id="outputNIKPelaku"></output></td>
+        </tr>
+        <tr>
+            <td><strong>Lokasi Penangkapan:</strong></td>
+            <td><output id="outputLokasi"></output></td>
+        </tr>
+        <tr>
+            <td><strong>Nama Petugas:</strong></td>
+            <td><output id="outputNamaPetugas"></output></td>
+        </tr>
+        <tr>
+            <td><strong>Pangkat:</strong></td>
+            <td><output id="outputPangkat"></output></td>
+        </tr>
+        <tr>
+            <td><strong>Devisi:</strong></td>
+            <td><output id="outputDevisi"></output></td>
+        </tr>
+        <tr>
+            <td><strong>Narasi:</strong></td>
+            <td><output id="outputNarasi"></output></td>
+        </tr>
+    </table>
 
-    <div id="history"></div>
+    <!-- DAFTAR PASAL -->
+    <h2 class="sedang">PERSENJATAAN</h2>
+    <table class="sedangTable">
+        <tr class="sedang2">
+            <td>UU</td>
+            <td>CEKLIS</td>
+            <td>PERSENJATAAN</td>
+            <td>DENDA</td>
+            <td>PENJARA</td>
+        </tr>
+        <tr>
+            <td>2.A</td>
+            <td><input type="checkbox"></td>
+            <td>KEPEMILIKAN SENJATA TUMPUL/SAJAM</td>
+            <td>250</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>2.B</td>
+            <td><input type="checkbox"></td>
+            <td>KEPEMILIKAN SENJATA API LARAS PENDEK</td>
+            <td>300</td>
+            <td>30</td>
+        </tr>
+    </table>
 
-        <footer>
+    <h2 class="sedang">TINDAK KRIMINAL</h2>
+    <table class="sedangTable">
+        <tr class="sedang2">
+            <td>UU</td>
+            <td>CEKLIS</td>
+            <td>TINDAK KRIMINAL</td>
+            <td>DENDA</td>
+            <td>PENJARA</td>
+        </tr>
+        <tr>
+            <td>3.A</td>
+            <td><input type="checkbox"></td>
+            <td>PERCOBAAN PEMBUNUHAN</td>
+            <td>400</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>3.B</td>
+            <td><input type="checkbox"></td>
+            <td>PEMBUNUHAN</td>
+            <td>800</td>
+            <td>60</td>
+        </tr>
+    </table>
+
+    <footer>
         <div class="credits">
-            <p>Copyright 2024</p>
-      <h1>  <p>Dev By : 👮Tommy Henderson👮</p> </h1>
-            <h1> <p> ANJAY WILDAN </p> </h1>
+            <a href="https://www.instagram.com/mezz1606?igsh=MTk2YXkydTNlbzQ2ZQ==">Follow IG Gwe Dapat Bansos</a>
+            <p>Dev By : 👮Teddy Abimana👮</p>
         </div>
-        </footer>
-
-    <h2 class="sedang">CRIMES AGAINST PUBLIC PEACE</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-        <tr>
-            <td>101</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Tax Evasion</td>
-            <td>800</td>
-            <td>60</td>
-        </tr>
-
-        <tr>
-            <td>105</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Bribery of a Public Official</td>
-            <td>800</td>
-            <td>180</td>
-        </tr>
-
-        <tr>
-            <td>106</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Incitement To Riot</td>
-            <td>800</td>
-            <td>180</td>
-        </tr>
-
-        <tr>
-            <td>107</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Unlawful Assembly</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-
-        <tr>
-            <td>108</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Tampering with Evidence</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>109</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Intimidating a Witness or Victim</td>
-            <td>800</td>
-            <td>180</td>
-        </tr>
-
-        <tr>
-            <td>110</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Resistance, delay, or obstruction of public</td>
-            <td>800</td>
-            <td>60</td>
-        </tr>
-        
-               <tr>
-            <td>111</td>
-            <td><input type="checkbox" class="CEKLIS"> <td>Escape from Lawful Custody </td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                <tr>
-            <td>112</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Evading a Peace Officer</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                <tr>
-            <td>113</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Resisting Arrest</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-        
-                        <tr>
-            <td>114</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Misuse of an Emergency Hotline</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-        
-                        <tr>
-            <td>115</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>False Impersonation</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-        
-                        <tr>
-            <td>116</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Assault on A Government Employee</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                        <tr>
-            <td>117</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Fraud</td>
-            <td>800</td>
-            <td>60</td>
-        </tr>
-        
-                        <tr>
-            <td>118</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Disturbing the Peace</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-        
-</table>
-
-    <h2 class="sedang">CRIMES AGAINST THE PERSON</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-                <tr>
-            <td>201</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Murder</td>
-            <td>120</td>
-            <td>800</td>
-        </tr>
-
-        <tr>
-            <td>202</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Involuntary Manslaughter</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>203</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>assault</td>
-            <td>500</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>204</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Assault with a Deadly Weapon</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>205</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Battery</td>
-            <td>500</td>
-            <td>30</td>
-        </tr>
-
-        <tr>
-            <td>206</td></td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Aggravated Battery</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-                  <tr>
-            <td>207</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Kidnapping</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                          <tr>
-            <td>208</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Torture</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>209</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Unlawful Imprisonment</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>210</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Criminal Threats</td>
-            <td>500</td>
-            <td>30</td>
-        </tr>
-
-        <tr>
-            <td>211</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Robbery</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>212</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Armed Robbery</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-</table>
-
-    <h2 class="sedang">CRIME AGAINST PROPERTY</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-        <tr>
-            <td>301</td></td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Arson</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>302</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Burglary</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-                     <tr>
-            <td>303</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Grand Theft Auto</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-</table>
-
-    <h2 class="sedang">CRIMES RELATING TO PUBLIC HEALTH AND SAFETY</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-                        <tr>
-            <td>501</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Manufacturing A Controlled Substance</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                                <tr>
-            <td>502</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Possession Of A Controlled Substance</td>
-            <td>500</td>
-            <td>30</td>
-        </tr>
-        
-                        <tr>
-            <td>503</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Possession Of A Controlled Substance with Intent to Distribute</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-        
-                                <tr>
-            <td>504</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Criminal Sale Of a Controlled Substance</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                                <tr>
-            <td>505</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Drug Smuggling</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                                <tr>
-            <td>506</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Eavesdropping</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                                <tr>
-            <td>507</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Facial Obstruction</td>
-            <td>500</td>
-            <td>30</td>
-        </tr>
-        
-                                        <tr>
-            <td>508</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Littering</td>
-            <td>30</td>
-            <td>-</td>
-        </tr>
-
-
-</table>
-
-    <h2 class="sedang">CRIMES AGAINST PUBLIC DECENCY AND GOOD MORALS</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-                        <tr>
-            <td>401</td>
-            <td><iNput type="checkbox" class="CEKLIS"></td>
-            <td>Smuggling and selling protected animals</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-</table>
-
-    <h2 class="sedang">CRIMES RELATING TO FIREARM REGULATION</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-        <tr>
-            <td>601</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Unlawful Possession of a Firearm</td>
-            <td>500</td>
-            <td>60</td>
-        </tr>
-
-        <tr>
-            <td>602</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Unlicensed Sale of Firearm or Explosives</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>603</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Brandishing a Deadly Weapon</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-                            <tr>
-            <td>604</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Discharging A Firearm in Public</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-
-        <tr>
-            <td>605</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Discharging A Firearm From A Motor Vehicle</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                <tr>
-            <td>606</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Possession of a Firearm by Convicted Felon</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                <tr>
-            <td>607</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Unlawful Possession of Ammunition</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-      
-                  <tr>
-            <td>608</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Possession of a Prohibited Firearm</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-        
-                        <tr>
-            <td>609</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Manufacturing illegal firearms</td>
-            <td>800</td>
-            <td>120</td>
-        </tr>
-</table>
-
-    <h2 class="sedang">PARTIES TO A CRIME</h2>
-    <table class="sedangTable">
-        <tr class="sedang2">
-            <td>UU</td>
-            <td>CEKLIS</td>
-            <td>PASAL</td>
-            <td>DENDA</td>
-            <td>PENJARA</td>
-        </tr>
-
-        <tr>
-            <td>701</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Accomplice</td>
-            <td>500</td>
-            <td>-</td>
-        </tr>
-        
-        <tr>
-            <td>701</td>
-            <td><input type="checkbox" class="CEKLIS"></td>
-            <td>Accessory</td>
-            <td>500</td>
-            <td>-</td>
-        </tr>
-
+    </footer>
 
 </body>
 
-    </html>
-
-    
+</html>
