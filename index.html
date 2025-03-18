@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UU Kepolisian SAMP</title>
+    <title>UU KEPOLISAN SAMP</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
+    <script>
+        function submitForm() {
+            let nama = document.getElementById("nama").value;
+            let devisi = document.getElementById("devisi").value;
+            let ceklis = document.querySelectorAll(".CEKLIS:checked");
+            let pasalTerpilih = [];
 
+            ceklis.forEach((item) => {
+                let row = item.closest("tr");
+                let pasal = row.cells[0].innerText;
+                let deskripsi = row.cells[2].innerText;
+                pasalTerpilih.push(`${pasal} - ${deskripsi}`);
+            });
+
+            let hasil = `
+                <h3>Hasil Input:</h3>
+                <p><strong>Nama Anggota:</strong> ${nama}</p>
+                <p><strong>Devisi:</strong> ${devisi}</p>
+                <p><strong>Pasal yang Dicentang:</strong></p>
+                <ul>${pasalTerpilih.map(pasal => `<li>${pasal}</li>`).join("")}</ul>
+            `;
+
+            document.getElementById("history").innerHTML = hasil;
+        }
+    </script>
+</head>
+
+<body>
     <h1 class="judul">UUD ARIVENA</h1>
-    <h2 class="ringan">👮 PRESISI 👮</h2>
+    
+    <h2 class="ringan">👮PRESISI👮</h2>
 
     <div class="form-group">
-        <label for="namaPelaku">Nama Pelaku:</label>
-        <input type="text" id="namaPelaku">
+        <label for="nama">Nama Anggota:</label>
+        <input type="text" id="nama">
     </div>
     
     <div class="form-group">
-        <label for="nik">NIK:</label>
-        <input type="text" id="nik">
+        <label for="devisi">Devisi:</label>
+        <input type="text" id="devisi">
     </div>
 
-    <div class="form-group">
-        <label for="lokasi">Lokasi Penangkapan:</label>
-        <input type="text" id="lokasi">
-    </div>
-
-    <div class="form-group">
-        <label for="namaPetugas">Nama Petugas:</label>
-        <input type="text" id="namaPetugas">
-    </div>
-
-    <div class="form-group">
-        <label for="pangkat">Pangkat:</label>
-        <input type="text" id="pangkat">
-    </div>
-
-    <div class="form-group">
-        <label for="divisi">Divisi:</label>
-        <input type="text" id="divisi">
-    </div>
-
-    <div class="form-group">
-        <label for="narasi">Narasi:</label>
-        <textarea id="narasi"></textarea>
-    </div>
+    <button onclick="submitForm()">Submit</button>
+    <div id="history"></div>
 
     <h2 class="sedang">PERSENJATAAN</h2>
-    <table class="sedangTable">
+    <table class="sedangTable" border="1">
         <tr class="sedang2">
-            <th>UU</th>
-            <th>CEKLIS</th>
-            <th>PERSENJATAAN</th>
-            <th>DENDA</th>
-            <th>PENJARA</th>
+            <td>UU</td>
+            <td>CEKLIS</td>
+            <td>PERSENJATAAN</td>
+            <td>DENDA</td>
+            <td>PENJARA</td>
         </tr>
+
         <tr>
             <td>2.A</td>
             <td><input type="checkbox" class="CEKLIS"></td>
@@ -63,18 +68,15 @@
             <td>250</td>
             <td>15</td>
         </tr>
+
         <tr>
-            <td>2.B</td>
+            <td>6.E</td>
             <td><input type="checkbox" class="CEKLIS"></td>
-            <td>KEPEMILIKAN SENJATA API LARAS PENDEK</td>
-            <td>300</td>
-            <td>30</td>
+            <td>PEMBAJAKAN</td>
+            <td>750</td>
+            <td>45</td>
         </tr>
     </table>
-
-    <button onclick="submitForm()">Submit</button>
-    
-    <div id="hasilLaporan"></div>
-
 </body>
+
 </html>
