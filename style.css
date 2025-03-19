@@ -12,16 +12,20 @@ body {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    border: 2px solid #000;
+    border: 2px solid #000; 
     border-radius: 8px;
     background-color: #f0f8ff; /* Light blue */
 }
 
 /* Title Styles */
 .judul {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: orange;
+    font-size: 32ft;
 }
 
 /* Form Group Styles */
@@ -48,7 +52,7 @@ body {
     resize: none;
 }
 
-/* Box untuk "Pasal yang Dilanggar" dan "Obat Obatan/Narkotika" */
+/* Box untuk "Obat Obatan/Narkotika" */
 .sedang {
     font-size: 20px;
     margin-top: 30px;
@@ -79,6 +83,17 @@ body {
 .sedangTable th {
     background-color: #f0f8ff;
     font-weight: bold;
+
+
+    . {
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: orange;
+    font-size: 32ft;
+
 }
 
 .sedangTable td {
