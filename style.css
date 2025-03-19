@@ -48,11 +48,18 @@ body {
     resize: none;
 }
 
-/* Pasal Section */
+/* Box untuk "Pasal yang Dilanggar" dan "Obat Obatan/Narkotika" */
 .sedang {
     font-size: 20px;
     margin-top: 30px;
     text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+    background-color: #add8e6; /* Light blue */
+    border-radius: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Table Styles */
@@ -96,10 +103,21 @@ button:hover {
     background-color: #45a049;
 }
 
-/* History Section */
+/* History Section (Hasil setelah submit) */
 .history-container {
     margin-top: 40px;
     padding: 20px;
     border: 2px solid #000;
     background-color: #f0f8ff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+/* Box after submit visible */
+.history-container.show {
+    display: block;
 }
