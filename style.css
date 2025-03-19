@@ -1,164 +1,105 @@
-/* ======= General Style ======= */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffe6f2;
+    font-family: Arial, sans-serif;
+    background-color: white;
     color: #333;
     margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.form-container {
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ======= Header dengan Border Text ======= */
-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px #ff3385, -2px -2px 4px #cc0066;
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    padding: 15px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(255, 51, 133, 0.3);
-    font-size: 26px;
-    font-weight: bold;
-}
-
-/* ======= Kotak Utama (Semua Gabung Jadi Satu) ======= */
-.container {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    border: 3px solid #ff66b2;
-}
-
-/* ======= Form Input ======= */
-.form-group {
-    background: #fff0f5;
-    padding: 10px;
+    border: 2px solid #000;
     border-radius: 8px;
-    margin-bottom: 10px;
-    border: 2px solid #ff66b2;
+    background-color: #f0f8ff; /* Light blue */
 }
 
-label {
+/* Title Styles */
+.judul {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
     font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: #ff3385;
-    text-shadow: 1px 1px 2px #cc0066;
 }
 
-input, textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ff66b2;
-    border-radius: 5px;
-    background: #ffffff;
-    color: #333;
-    outline: none;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-input:focus, textarea:focus {
-    border-color: #ff3385;
+/* Narasi Textarea */
+.form-group textarea {
+    height: 100px;
+    resize: none;
 }
 
-/* ======= Kotak Pasal dan Narkotika (Digabung) ======= */
-.box-section {
-    background: #fff0f5;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    border: 3px solid #ff66b2;
+/* Pasal Section */
+.sedang {
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: underline;
 }
 
-.box-section h2 {
-    text-align: center;
-    color: white;
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    padding: 10px;
-    border-radius: 5px;
-    text-shadow: 1px 1px 2px #cc0066;
-    margin: 0;
-}
-
-/* ======= Tabel Pasal ======= */
+/* Table Styles */
 .sedangTable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    border: 2px solid #ff66b2;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
-.sedangTable th, .sedangTable td {
-    border: 2px solid #ff66b2;
+.sedangTable th,
+.sedangTable td {
     padding: 12px;
-    text-align: left;
-    background: #ffffff;
+    text-align: center;
+    border: 1px solid #000;
 }
 
 .sedangTable th {
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 2px #cc0066;
+    background-color: #f0f8ff;
+    font-weight: bold;
 }
 
-/* ======= Tombol Submit ======= */
+.sedangTable td {
+    background-color: #fff;
+}
+
+/* Button Styles */
 button {
+    display: block;
     width: 100%;
-    padding: 12px;
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    color: white;
+    padding: 10px;
     font-size: 16px;
-    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-    text-shadow: 1px 1px 2px #cc0066;
+    margin-top: 20px;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #ff3385, #cc0066);
+    background-color: #45a049;
 }
 
-/* ======= Kotak Hasil Laporan (Gabung dengan Box Utama) ======= */
+/* History Section */
 .history-container {
-    margin-top: 10px;
-    padding: 15px;
-    border: 3px solid #ff66b2;
-    border-radius: 10px;
-    background: #ffffff;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.history-container h3 {
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    border: 3px solid #ff3385;
-    text-shadow: 1px 1px 2px #cc0066;
-}
-
-.history-container p {
-    padding: 8px;
-    margin: 5px 0;
-    border-left: 4px solid #ff3385;
-    background: #fff0f5;
-    padding-left: 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-shadow: 0.5px 0.5px 1px #cc0066;
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #f0f8ff;
 }
