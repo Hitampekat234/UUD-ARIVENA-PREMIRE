@@ -25,8 +25,8 @@ h1 {
     font-weight: bold;
 }
 
-/* ======= Container Utama ======= */
-.form-container {
+/* ======= Kotak Utama (Semua Gabung Jadi Satu) ======= */
+.container {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -67,7 +67,50 @@ input:focus, textarea:focus {
     border-color: #ff3385;
 }
 
-/* ======= Submit Button ======= */
+/* ======= Kotak Pasal dan Narkotika (Digabung) ======= */
+.box-section {
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #ff66b2;
+}
+
+.box-section h2 {
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, #ff66b2, #ff3385);
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px #cc0066;
+    margin: 0;
+}
+
+/* ======= Tabel Pasal ======= */
+.sedangTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedangTable th, .sedangTable td {
+    border: 2px solid #ff66b2;
+    padding: 12px;
+    text-align: left;
+    background: #ffffff;
+}
+
+.sedangTable th {
+    background: linear-gradient(90deg, #ff66b2, #ff3385);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #cc0066;
+}
+
+/* ======= Tombol Submit ======= */
 button {
     width: 100%;
     padding: 12px;
@@ -87,58 +130,31 @@ button:hover {
     background: linear-gradient(90deg, #ff3385, #cc0066);
 }
 
-/* ======= Tabel Pasal ======= */
-.sedangTable {
-    width: 100%;
-    border-collapse: collapse;
+/* ======= Kotak Hasil Laporan (Gabung dengan Box Utama) ======= */
+.history-container {
     margin-top: 10px;
+    padding: 15px;
     border: 3px solid #ff66b2;
     border-radius: 10px;
-    overflow: hidden;
-}
-
-.sedangTable th, .sedangTable td {
-    border: 2px solid #ff66b2;
-    padding: 12px;
-    text-align: left;
-    background: #fff0f5;
-}
-
-.sedangTable th {
-    background: linear-gradient(90deg, #ff66b2, #ff3385);
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 2px #cc0066;
-}
-
-/* ======= Kotak Hasil Laporan ======= */
-.history-container {
-    margin-top: 20px;
-    padding: 20px;
-    border: 3px solid #ff66b2;
-    border-radius: 8px;
     background: #ffffff;
     width: 100%;
-    max-width: 800px;
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ======= Judul Hasil Laporan ======= */
 .history-container h3 {
     background: linear-gradient(90deg, #ff66b2, #ff3385);
     color: white;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     border: 3px solid #ff3385;
     text-shadow: 1px 1px 2px #cc0066;
 }
 
-/* ======= Isi Hasil Laporan ======= */
 .history-container p {
     padding: 8px;
-    margin: 8px 0;
+    margin: 5px 0;
     border-left: 4px solid #ff3385;
     background: #fff0f5;
     padding-left: 15px;
