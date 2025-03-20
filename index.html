@@ -1,105 +1,1060 @@
 <!DOCTYPE html>
+
+
+
 <html lang="id">
 
+
+
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNDANG-UNDANG POLISI AETERNA</title>
+
+    <title>UNDANG UNDANG POLISI AETERNA </title>
+
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </head>
 
-<body onload="updateDateTime()">
+
+
+<body>
 
     <h1 class="judul">IDENTITAS PELAKU</h1>
 
+
+
     <div class="form-container">
+
         <div class="form-group">
+
             <label for="namaPelaku">Nama Pelaku:</label>
+
             <input type="text" id="namaPelaku">
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="nik">NIK:</label>
+
             <input type="text" id="nik">
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="waktuTanggal">Waktu & Tanggal:</label>
+
             <input type="text" id="waktuTanggal" readonly>
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="lokasi">Lokasi Penangkapan:</label>
+
             <input type="text" id="lokasi">
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="namaPetugas">Nama Petugas:</label>
+
             <input type="text" id="namaPetugas">
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="pangkat">Pangkat:</label>
+
             <input type="text" id="pangkat">
+
         </div>
 
+
+
         <div class="form-group">
-            <label for="devisi">Divisi:</label>
+
+            <label for="devisi">Devisi:</label>
+
             <input type="text" id="devisi">
+
         </div>
 
+
+
         <div class="form-group">
+
             <label for="narasi">Narasi:</label>
+
             <textarea id="narasi"></textarea>
+
         </div>
+
+
 
         <h2 class="sedang">TINDAK PIDANA NYAWA</h2>
 
         <table class="sedangTable" border="1">
-            <tr class="sedang2">
+
+       <tr class="sedang2">
+
                 <th>UU</th>
+
                 <th>CEKLIS</th>
+
                 <th>PELANGGARAN</th>
+
                 <th>DENDA</th>
+
                 <th>PENJARA</th>
-            </tr>
 
-            <tr>
-                <td>7.1</td>
-                <td><input type="checkbox" class="CEKLIS" data-denda="10000" data-penjara="0"></td>
-                <td>TERORISME</td>
-                <td>10000</td>
-                <td>0</td>
-            </tr>
+       <tr>
 
-            <tr>
-                <td>7.2</td>
-                <td><input type="checkbox" class="CEKLIS" data-denda="7000" data-penjara="90"></td>
-                <td>PERCOBAAN TERORISME</td>
-                <td>7000</td>
-                <td>90</td>
-            </tr>
+            <td>7.1</td>
 
-            <tr>
-                <td>8.1.A</td>
-                <td><input type="checkbox" class="CEKLIS" data-denda="8000" data-penjara="90"></td>
-                <td>PEMBUNUHAN</td>
-                <td>8000</td>
-                <td>90</td>
-            </tr>
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>TERORISME</td>
+
+            <td>10000</td>
+
+            <td>0</td>
+
+       </tr>
+
+
+
+       <tr>
+
+            <td>7.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERCOBAAN TERORISME</td>
+
+            <td>7000</td>
+
+            <td>90</td>
+
+        </tr>
+
+            
+
+        <tr>
+
+            <td>8.1.A</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBUNUHAN</td>
+
+            <td>8000</td>
+
+            <td>90</td>
+
+        </tr>
+
+
+
+                    <tr>
+
+            <td>8.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERCOBAAN PEMBUNUHAN</td>
+
+            <td>5000</td>
+
+            <td>35</td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+            <td>9.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENODONGAN WARGA SIPIL</td>
+
+            <td>4000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                    <tr>
+
+            <td>9.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENYANDERAAN</td>
+
+            <td>3000</td>
+
+            <td>30</td>
+
+                    </tr>
+
+
+
+</table>
+
+
+
+    <h2 class="sedang">PIDANA HARTA BENDA</h2>
+
+    <table class="sedangTable">
+
+        <tr class="sedang2">
+
+            <td>UU</td>
+
+            <td>CEKLIS</td>
+
+            <td>PELANGGARAN</td>
+
+            <td>DENDA</td>
+
+            <td>PENJARA</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MEMBERIKAN INFORMASI PALSU</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MELAKUKAN PENIPUAN</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENCURIAN</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENCOBA PENCURIAN</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERAMPOKAN WARUNG</td>
+
+            <td>2000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERAMPOKAN BANK</td>
+
+            <td>5000</td>
+
+            <td>60</td>
+
+                </tr>
+
+
+
+        
 
         </table>
 
-        <h2>Total Hukuman</h2>
+
+
+
+
+            <h2 class="sedang">PIDANA SENPI ILEGAL</h2>
+
+    <table class="sedangTable">
+
+        <tr class="sedang2">
+
+            <td>UU</td>
+
+            <td>CEKLIS</td>
+
+            <td>PELANGGARAN</td>
+
+            <td>DENDA</td>
+
+            <td>PENJARA</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>13.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MEMILIKI SENJATA TUMPUL/TAJAM</td>
+
+            <td>1300</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>13.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>SENPI LARAS PENDEK</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>13.3</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>SENPI LARAS MENENGAH</td>
+
+            <td>2000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>13.4</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>SENPI LARAS PANJANG</td>
+
+            <td>3000</td>
+
+            <td>25</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>14.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENJUAL SENPI ILEGAL</td>
+
+            <td>2000</td>
+
+            <td>25</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>14.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBUANGAN SENPI DENGAN SENGAJA</td>
+
+            <td>1500</td>
+
+            <td>25</td>
+
+                </tr>
+
+
+
+        
+
+    </table>
+
+
+
+
+
+            <h2 class="sedang">PIDANA KEAMANAN UMUM</h2>
+
+    <table class="sedangTable">
+
+        <tr class="sedang2">
+
+            <td>UU</td>
+
+            <td>CEKLIS</td>
+
+            <td>PELANGGARAN</td>
+
+            <td>DENDA</td>
+
+            <td>PENJARA</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>TIDAK MEMBAWA KTP</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>BERADA DI TKP</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENCEMARAN NAMA BAIK</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERKELAHIAN DI TENGAH UMUM</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MELAKUKAN HAL TIDAK SENONOH</td>
+
+            <td>2000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENGANCAMAN TERHADAP WARGA</td>
+
+            <td>5000</td>
+
+            <td>60</td>
+
+                </tr>
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBUANGAN BARANG BUKTI</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>KERUSUHAN TEMPAT UMUM</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENGANIAYAAN KE WARGA</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBAJAKAN</td></td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEPERANGAN</td>
+
+            <td>2000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBURUAN ILEGAL</td>
+
+            <td>5000</td>
+
+            <td>60</td>
+
+                </tr>
+
+        
+
+          <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MEMBAWA HEWAN TERLINDUNGI</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENJUDIAN ILEGAL</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MABUK HEULA DI TENPAT UMUM</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PELECEHAN WANITA</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+    </table>
+
+
+
+    <h2 class="sedang">PIDANA BARANG ILEGAL</h2>
+
+    <table class="sedangTable">
+
+        <tr class="sedang2">
+
+            <td>UU</td>
+
+            <td>CEKLIS</td>
+
+            <td>PELANGGARAN</td>
+
+            <td>DENDA</td>
+
+            <td>PENJARA</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENYALAHGUNAAN BARANG ILEGAL</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MEMILIKI/MENYIMPAN BARANG ILEGAL</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PERDAGANGAN BARANG ILEGAL</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MEMPRODUKSI BARANG ILEGAL</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENGONSUMSI NARKOBA/SABU</td>
+
+            <td>2000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PEMBUATAN BARANG ILEGAL DENGAN SENGAJA</td>
+
+            <td>5000</td>
+
+            <td>60</td>
+
+                </tr>
+
+
+
+    </table>
+
+    
+
+  
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <h2 class="sedang">PIDANA APARATUR NEGARA</h2>
+
+    <table class="sedangTable">
+
+        <tr class="sedang2">
+
+            <td>UU</td>
+
+            <td>CEKLIS</td>
+
+            <td>PELANGGARAN</td>
+
+            <td>DENDA</td>
+
+            <td>PENJARA</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENGHALANGI TUGAS PEMERINTAH</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+
+
+        <tr>
+
+            <td>10.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENOLAK SURAT TILANG</td>
+
+            <td>2000</td>
+
+            <td>10</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MELARIKAN DIRI</td>
+
+            <td>3000</td>
+
+            <td>20</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>11.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENGANCAMAN PETUGAS</td>
+
+            <td>1500</td>
+
+            <td>15</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>PENCEMARAN NAMA BAIK INSTANSI</td>
+
+            <td>2000</td>
+
+            <td>30</td>
+
+        </tr>
+
+
+
+                <tr>
+
+            <td>12.2</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENYUAP INSTANSI</td>
+
+            <td>5000</td>
+
+            <td>60</td>
+
+                </tr>
+
+
+
+        
+
+
+
+        <tr>
+
+            <td>10.1</td>
+
+            <td><iNput type="checkbox" class="CEKLIS"></td>
+
+            <td>MENYERAG PETUGAS VERBAL/NONVERBAL</td>
+
+            <td>2000</td>
+
+            <td>5</td>
+
+        </tr>
+
+ </table>
+
+ 
+
+ <h2>Total Hukuman</h2>
+
         <p>Total Denda: <span id="totalDenda">0</span></p>
+
         <p>Total Penjara: <span id="totalPenjara">0</span> hari</p>
 
+        
+
         <button onclick="submitForm()">Submit</button>
+
     </div>
+
+
 
     <div id="history" class="history-container"></div>
 
+
+
 </body>
 
+
+
 </html>
+
