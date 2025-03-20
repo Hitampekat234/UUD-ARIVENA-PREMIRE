@@ -1,97 +1,51 @@
-/* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
     background-color: white;
     font-family: Arial, sans-serif;
 }
 
-/* Judul */
-.judul {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+h1, h2, h5, p, td, label {
     border: 2px solid black;
     padding: 10px;
-    display: inline-block;
-    width: 100%;
 }
 
-/* Container Form */
-.form-container {
-    border: 2px solid black;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-    background: white;
+h2.sedang {
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-/* Input dan Textarea */
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid black;
-}
-
-/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 8px;
+td, th {
+    border: 2px solid black;
+    padding: 10px;
     text-align: center;
 }
 
-th {
-    background-color: lightgray;
-}
-
-/* Bagian "Pasal yang Dilanggar" */
-.sedang {
-    text-align: center;
-    background-color: lightgray;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
+input[type="text"] {
     border: 2px solid black;
-}
-
-/* Container untuk History */
-.history-container {
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-
-/* Tombol */
-button {
+    padding: 5px;
     width: 100%;
-    padding: 10px;
-    background-color: gray;
+}
+
+button {
+    background-color: black;
     color: white;
-    font-weight: bold;
-    border: none;
+    border: 2px solid black;
+    padding: 10px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgray;
+    background-color: gray;
+}
+
+#history {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
 }
