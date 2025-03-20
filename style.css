@@ -1,97 +1,89 @@
 /* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
-    background-color: white;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
 /* Judul */
 .judul {
     text-align: center;
     font-size: 24px;
-    font-weight: bold;
-    border: 2px solid black;
-    padding: 10px;
-    display: inline-block;
-    width: 100%;
+    color: #333;
 }
 
-/* Container Form */
+/* Container utama */
 .form-container {
-    border: 2px solid black;
-    padding: 20px;
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Input dan Textarea */
+/* Grup Form */
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     font-weight: bold;
+    display: block;
 }
 
-input, textarea {
+.form-group input, 
+.form-group textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid black;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* Tabel */
-table {
+.sedangTable {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: lightgray;
-}
-
-/* Bagian "Pasal yang Dilanggar" */
-.sedang {
-    text-align: center;
-    background-color: lightgray;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid black;
-}
-
-/* Container untuk History */
-.history-container {
     margin-top: 20px;
+}
+
+.sedangTable th, .sedangTable td {
+    border: 1px solid #ddd;
     padding: 10px;
-    border: 2px solid black;
-    background-color: white;
+    text-align: center;
+}
+
+.sedangTable th {
+    background-color: #007bff;
+    color: white;
 }
 
 /* Tombol */
 button {
+    display: block;
     width: 100%;
     padding: 10px;
-    background-color: gray;
+    margin-top: 15px;
+    background: #007bff;
     color: white;
-    font-weight: bold;
     border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgray;
+    background: #0056b3;
+}
+
+/* Hasil Output */
+.history-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
