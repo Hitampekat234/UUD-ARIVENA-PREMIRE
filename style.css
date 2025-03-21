@@ -1,97 +1,189 @@
 /* Reset dasar */
+
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
+
 
 /* Body */
+
 body {
-    background-color: white;
+
+    background-color: whitesmoke;
+
     font-family: Arial, sans-serif;
+
 }
+
+
 
 /* Judul */
+
 .judul {
+
     text-align: center;
+
     font-size: 24px;
+
+    background-color: pink
     font-weight: bold;
-    border: 2px solid black;
+
+    border: 2px pink;
+
     padding: 10px;
-    display: inline-block;
+
+    display: pink;
+
     width: 100%;
+
 }
+
+
 
 /* Container Form */
+
 .form-container {
-    border: 2px solid black;
-    padding: 20px;
-    max-width: 600px;
+
+    
     margin: auto;
+
     background: white;
+
 }
+
+
 
 /* Input dan Textarea */
+
 .form-group {
+
     margin-bottom: 15px;
+
 }
+
+
 
 label {
+
     font-weight: bold;
+
 }
+
+
 
 input, textarea {
+
     width: 100%;
+
     padding: 8px;
+
     border: 1px solid black;
+
 }
+
+
 
 /* Tabel */
+
 table {
+
     width: 100%;
+
     border-collapse: collapse;
+
     margin-top: 10px;
+
 }
+
+
 
 th, td {
+
     border: 1px solid black;
+
     padding: 8px;
+
     text-align: center;
+
 }
+
+
 
 th {
+
     background-color: lightgray;
+
 }
+
+
 
 /* Bagian "Pasal yang Dilanggar" */
+
 .sedang {
+
     text-align: center;
-    background-color: lightgray;
+
+    background-color: pink;
+
     padding: 10px;
+
     font-size: 18px;
+
     font-weight: bold;
+
     border: 2px solid black;
+
 }
+
+
 
 /* History */
+
 .history-container {
+
     margin-top: 20px;
+
     padding: 10px;
+
     border: 2px solid black;
+
     background-color: white;
+
 }
+
+
 
 /* Tombol */
+
 button {
+
     width: 100%;
+
     padding: 10px;
+
     background-color: gray;
+
     color: white;
+
     font-weight: bold;
+
     border: none;
+
     cursor: pointer;
+
 }
 
+
+
 button:hover {
+
     background-color: darkgray;
+
 }
